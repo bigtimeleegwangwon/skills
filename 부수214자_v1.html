@@ -60,28 +60,28 @@
 
     <script>
         const radicals = [
-            {num:1,meaning:"한 일",char:"一"},{num:2,meaning:"막대 이",char:"丨"},{num:3,meaning:"점 정",char:"丶"},{num:4,meaning:"가로 뜻",char:"丿"},{num:5,meaning:"꺾을 을",char:"乙"},{num:6,meaning:"갈고리 이",char:"亅"},{num:7,meaning:"둘 이",char:"二"},{num:8,meaning:"머리 머",char:"亠"},{num:9,meaning:"사람 인",char:"人"},{num:10,meaning:"다리 아",char:"儿"},
-            {num:11,meaning:"들어갈 입",char:"入"},{num:12,meaning:"팔 팔",char:"八"},{num:13,meaning:"얼음 빙",char:"冂"},{num:14,meaning:"관 괘",char:"冖"},{num:15,meaning:"풀 루",char:"冗"},{num:16,meaning:"찬 냉",char:"冫"},{num:17,meaning:"칼 도",char:"刀"},{num:18,meaning:"쇠 도",char:"刂"},{num:19,meaning:"열 십",char:"十"},{num:20,meaning:"점 복",char:"卜"},
-            {num:21,meaning:"봉인 인",char:"卩"},{num:22,meaning:"입 구",char:"口"},{num:23,meaning:"흙 토",char:"土"},{num:24,meaning:"해 사",char:"士"},{num:25,meaning:"밤 야",char:"夂"},{num:26,meaning:"저녁 야",char:"夕"},{num:27,meaning:"큰 대",char:"大"},{num:28,meaning:"여 여",char:"女"},{num:29,meaning:"아들 자",char:"子"},{num:30,meaning:"집 면",char:"宀"},
-            {num:31,meaning:"길 촌",char:"寸"},{num:32,meaning:"작을 소",char:"小"},{num:33,meaning:"아 요",char:"尢"},{num:34,meaning:"산 산",char:"山"},{num:35,meaning:"산 천",char:"巛"},{num:36,meaning:"공 공",char:"工"},{num:37,meaning:"자기 기",char:"己"},{num:38,meaning:"수건 건",char:"巾"},{num:39,meaning:"줄기 간",char:"干"},{num:40,meaning:"적을 요",char:"幺"},
-            {num:41,meaning:"넓을 광",char:"广"},{num:42,meaning:"끌 야",char:"廴"},{num:43,meaning:"두 홀",char:"廾"},{num:44,meaning:"걸을 척",char:"彳"},{num:45,meaning:"무늬 삼",char:"彡"},{num:46,meaning:"휴식 지",char:"彳"},{num:47,meaning:"막대 막",char:"彳"},{num:48,meaning:"막대 막",char:"彳"},{num:49,meaning:"무늬 삼",char:"彳"},{num:50,meaning:"마음 심",char:"心"},
-            {num:51,meaning:"창 그",char:"戈"},{num:52,meaning:"집 호",char:"戶"},{num:53,meaning:"손 수",char:"手"},{num:54,meaning:"가지 지",char:"支"},{num:55,meaning:"버팀목 복",char:"攴"},{num:56,meaning:"무게 근",char:"斤"},{num:57,meaning:"쐐기 사",char:"斯"},{num:58,meaning:"방 양",char:"爿"},{num:59,meaning:"아버지 부",char:"父"},{num:60,meaning:"괘 효",char:"爻"},
-            {num:61,meaning:"할아버지 조",char:"爺"},{num:62,meaning:"방 양",char:"爿"},{num:63,meaning:"이빨 아",char:"牙"},{num:64,meaning:"소 우",char:"牛"},{num:65,meaning:"개 견",char:"犬"},{num:66,meaning:"검을 현",char:"玄"},{num:67,meaning:"옥 옥",char:"玉"},{num:68,meaning:"박 과",char:"瓜"},{num:69,meaning:"기와 와",char:"瓦"},{num:70,meaning:"달 감",char:"甘"},
-            {num:71,meaning:"날 생",char:"生"},{num:72,meaning:"쓸 용",char:"用"},{num:73,meaning:"밭 전",char:"田"},{num:74,meaning:"쟁반 반",char:"皿"},{num:75,meaning:"가죽 피",char:"皮"},{num:76,meaning:"쟁반 반",char:"皿"},{num:77,meaning:"창 모",char:"矛"},{num:78,meaning:"화살 시",char:"矢"},{num:79,meaning:"돌 석",char:"石"},{num:80,meaning:"용 용",char:"龙"},
-            {num:81,meaning:"설 입",char:"立"},{num:82,meaning:"곡식 화",char:"禾"},{num:83,meaning:"구멍 혈",char:"穴"},{num:84,meaning:"설 입",char:"立"},{num:85,meaning:"구멍 혈",char:"穴"},{num:86,meaning:"설 입",char:"立"},{num:87,meaning:"대나무 죽",char:"竹"},{num:88,meaning:"쌀 미",char:"米"},{num:89,meaning:"실 사",char:"糸"},{num:90,meaning:"항아리 부",char:"缶"},
-            {num:91,meaning:"그물 망",char:"网"},{num:92,meaning:"양 양",char:"羊"},{num:93,meaning:"깃 우",char:"羽"},{num:94,meaning:"늙을 로",char:"老"},{num:95,meaning:"그리고 이",char:"而"},{num:96,meaning:"쟁기 뢰",char:"耒"},{num:97,meaning:"귀 이",char:"耳"},{num:98,meaning:"글씨 유",char:"聿"},{num:99,meaning:"고기 육",char:"肉"},{num:100,meaning:"스스로 자",char:"自"},
-            {num:101,meaning:"이를 지",char:"至"},{num:102,meaning:"맷돌 구",char:"臼"},{num:103,meaning:"혀 설",char:"舌"},{num:104,meaning:"다를 차",char:"舛"},{num:105,meaning:"배 주",char:"舟"},{num:106,meaning:"간 간",char:"艮"},{num:107,meaning:"좋을 양",char:"良"},{num:108,meaning:"색 색",char:"色"},{num:109,meaning:"풀 초",char:"艸"},{num:110,meaning:"범 호",char:"虍"},
-            {num:111,meaning:"벌레 충",char:"虫"},{num:112,meaning:"피 혈",char:"血"},{num:113,meaning:"걸을 행",char:"行"},{num:114,meaning:"옷 의",char:"衣"},{num:115,meaning:"옷 자",char:"襾"},{num:116,meaning:"서쪽 서",char:"西"},{num:117,meaning:"볼 견",char:"見"},{num:118,meaning:"뿔 각",char:"角"},{num:119,meaning:"말 언",char:"言"},{num:120,meaning:"골짜기 곡",char:"谷"},
-            {num:121,meaning:"콩 두",char:"豆"},{num:122,meaning:"돼지 시",char:"豕"},{num:123,meaning:"짐승 치",char:"豸"},{num:124,meaning:"조개 패",char:"贝"},{num:125,meaning:"붉을 적",char:"赤"},{num:126,meaning:"달릴 주",char:"走"},{num:127,meaning:"발 족",char:"足"},{num:128,meaning:"몸 신",char:"身"},{num:129,meaning:"수레 차",char:"车"},{num:130,meaning:"매운 신",char:"辛"},
-            {num:131,meaning:"수레 진",char:"辰"},{num:132,meaning:"달을 척",char:"辵"},{num:133,meaning:"읍 읍",char:"邑"},{num:134,meaning:"읍 읍",char:"邒"},{num:135,meaning:"읍 읍",char:"邑"},{num:136,meaning:"방 방",char:"邦"},{num:137,meaning:"방 방",char:"邸"},{num:138,meaning:"옻 치",char:"邻"},{num:139,meaning:"춤 무",char:"郁"},{num:140,meaning:"주옥 주",char:"郎"},
-            {num:141,meaning:"술 유",char:"郞"},{num:142,meaning:"술 주",char:"郭"},{num:143,meaning:"술 주",char:"郯"},{num:144,meaning:"술 유",char:"酉"},{num:145,meaning:"술 유",char:"釆"},{num:146,meaning:"술 유",char:"里"},{num:147,meaning:"술 유",char:"重"},{num:148,meaning:"밤 야",char:"野"},{num:149,meaning:"음악 악",char:"鈎"},{num:150,meaning:"세밀한 세",char:"鍙"},
-            {num:151,meaning:"별 성",char:"鍜"},{num:152,meaning:"긴 장",char:"鎿"},{num:153,meaning:"문 문",char:"鐔"},{num:154,meaning:"큰 언",char:"長"},{num:155,meaning:"역 역",char:"門"},{num:156,meaning:"숨통 현",char:"阜"},{num:157,meaning:"먹이 할",char:"隶"},{num:158,meaning:"모습 모",char:"隹"},{num:159,meaning:"칭찬 찬",char:"雨"},{num:160,meaning:"면 면",char:"靑"},
-            {num:161,meaning:"맨 맨",char:"面"},{num:162,meaning:"구슬 구",char:"革"},{num:163,meaning:"물고기 어",char:"韋"},{num:164,meaning:"전쟁 전",char:"韭"},{num:165,meaning:"밥 식",char:"音"},{num:166,meaning:"머리 두",char:"頁"},{num:167,meaning:"향 향",char:"風"},{num:168,meaning:"말 마",char:"飛"},{num:169,meaning:"뼈 골",char:"食"},{num:170,meaning:"높을 고",char:"首"},
-            {num:171,meaning:"터럭 아",char:"香"},{num:172,meaning:"말 마",char:"馬"},{num:173,meaning:"뼈 골",char:"骨"},{num:174,meaning:"높을 고",char:"高"},{num:175,meaning:"터럭 아",char:"髟"},{num:176,meaning:"외로울 로",char:"鬍"},{num:177,meaning:"외로울 로",char:"鬚"},{num:178,meaning:"외로울 로",char:"鬟"},{num:179,meaning:"외로울 로",char:"鬢"},{num:180,meaning:"외로울 로",char:"鬣"},
-            {num:181,meaning:"외로울 로",char:"鬤"},{num:182,meaning:"외로울 로",char:"鬥"},{num:183,meaning:"외로울 로",char:"鬦"},{num:184,meaning:"외로울 로",char:"鬧"},{num:185,meaning:"외로울 로",char:"鬨"},{num:186,meaning:"외로울 로",char:"鬩"},{num:187,meaning:"외로울 로",char:"鬪"},{num:188,meaning:"외로울 로",char:"鬫"},{num:189,meaning:"외로울 로",char:"鬬"},{num:190,meaning:"외로울 로",char:"鬭"},
-            {num:191,meaning:"외로울 로",char:"鬮"},{num:192,meaning:"외로울 로",char:"鬯"},{num:193,meaning:"외로울 로",char:"鬰"},{num:194,meaning:"외로울 로",char:"鬱"},{num:195,meaning:"외로울 로",char:"鬲"},{num:196,meaning:"외로울 로",char:"鬳"},{num:197,meaning:"외로울 로",char:"鬴"},{num:198,meaning:"외로울 로",char:"鬵"},{num:199,meaning:"외로울 로",char:"鬶"},{num:200,meaning:"외로울 로",char:"鬷"},
-            {num:201,meaning:"외로울 로",char:"鬸"},{num:202,meaning:"외로울 로",char:"鬹"},{num:203,meaning:"외로울 로",char:"鬺"},{num:204,meaning:"외로울 로",char:"鬻"},{num:205,meaning:"귀신 귀",char:"鬼"},{num:206,meaning:"물고기 어",char:"魚"},{num:207,meaning:"새 조",char:"鳥"},{num:208,meaning:"검을 현",char:"鹵"},{num:209,meaning:"화살 화",char:"鹶"},{num:210,meaning:"화살 화",char:"鹷"},
-            {num:211,meaning:"화살 화",char:"鹸"},{num:212,meaning:"소금 염",char:"鹹"},{num:213,meaning:"소금 염",char:"鹺"},{num:214,meaning:"용 용",char:"龠"}
+            {num:1,meaning:"한 일",char:"一"},{num:2,meaning:"막대 이",char:"丨"},{num:3,meaning:"점 점",char:"丶"},{num:4,meaning:"빗금 삐",char:"丿"},{num:5,meaning:"꺾을 을",char:"乙"},{num:6,meaning:"갈고리 이",char:"亅"},{num:7,meaning:"둘 이",char:"二"},{num:8,meaning:"팔 팔",char:"八"},{num:9,meaning:"열 십",char:"十"},{num:10,meaning:"찬 냉",char:"冫"},
+            {num:11,meaning:"저녁 석",char:"夕"},{num:12,meaning:"날 일",char:"日"},{num:13,meaning:"말씀 왈",char:"曰"},{num:14,meaning:"달 월",char:"月"},{num:15,meaning:"기운 기",char:"气"},{num:16,meaning:"때 진",char:"辰"},{num:17,meaning:"비 우",char:"雨"},{num:18,meaning:"바람 풍",char:"風"},{num:19,meaning:"벼랑 엄",char:"厂"},{num:20,meaning:"흙 토",char:"土"},
+            {num:21,meaning:"산 산",char:"山"},{num:22,meaning:"내 천",char:"巛"},{num:23,meaning:"물 수",char:"水"},{num:24,meaning:"밭 전",char:"田"},{num:25,meaning:"돌 석",char:"石"},{num:26,meaning:"골짜기 곡",char:"谷"},{num:27,meaning:"고을 리",char:"里"},{num:28,meaning:"언덕 부",char:"阜"},{num:29,meaning:"풀 초",char:"屮"},{num:30,meaning:"나무 목",char:"木"},
+            {num:31,meaning:"박 과",char:"瓜"},{num:32,meaning:"곡식 화",char:"禾"},{num:33,meaning:"대나무 죽",char:"竹"},{num:34,meaning:"쌀 미",char:"米"},{num:35,meaning:"풀 초",char:"艸"},{num:36,meaning:"부추 궤",char:"韭"},{num:37,meaning:"보리 맥",char:"麥"},{num:38,meaning:"삼 마",char:"麻"},{num:39,meaning:"기장 서",char:"黍"},{num:40,meaning:"소 우",char:"牛"},
+            {num:41,meaning:"개 견",char:"犬"},{num:42,meaning:"자국 추",char:"禸"},{num:43,meaning:"양 양",char:"羊"},{num:44,meaning:"깃 우",char:"羽"},{num:45,meaning:"범 호",char:"虍"},{num:46,meaning:"벌레 충",char:"虫"},{num:47,meaning:"뿔 각",char:"角"},{num:48,meaning:"돼지 시",char:"豕"},{num:49,meaning:"짐승 치",char:"豸"},{num:50,meaning:"새 추",char:"隹"},
+            {num:51,meaning:"날 비",char:"飛"},{num:52,meaning:"말 마",char:"馬"},{num:53,meaning:"물고기 어",char:"魚"},{num:54,meaning:"새 조",char:"鳥"},{num:55,meaning:"소금 로",char:"鹵"},{num:56,meaning:"사슴 록",char:"鹿"},{num:57,meaning:"개구리 민",char:"黽"},{num:58,meaning:"쥐 서",char:"鼠"},{num:59,meaning:"용 용",char:"龍"},{num:60,meaning:"거북 귀",char:"龜"},
+            {num:61,meaning:"사람 인",char:"人"},{num:62,meaning:"다리 아",char:"儿"},{num:63,meaning:"입 구",char:"口"},{num:64,meaning:"여 여",char:"女"},{num:65,meaning:"아들 자",char:"子"},{num:66,meaning:"길 촌",char:"寸"},{num:67,meaning:"다리 오",char:"尢"},{num:68,meaning:"시체 시",char:"尸"},{num:69,meaning:"마음 심",char:"心"},{num:70,meaning:"손 수",char:"手"},
+            {num:71,meaning:"털 모",char:"毛"},{num:72,meaning:"발톱 조",char:"爪"},{num:73,meaning:"아버지 부",char:"父"},{num:74,meaning:"이빨 아",char:"牙"},{num:75,meaning:"병 녹",char:"疒"},{num:76,meaning:"가죽 피",char:"皮"},{num:77,meaning:"눈 목",char:"目"},{num:78,meaning:"늙을 로",char:"老"},{num:79,meaning:"그리고 이",char:"而"},{num:80,meaning:"귀 이",char:"耳"},
+            {num:81,meaning:"고기 육",char:"肉"},{num:82,meaning:"신하 신",char:"臣"},{num:83,meaning:"스스로 자",char:"自"},{num:84,meaning:"혀 설",char:"舌"},{num:85,meaning:"색 색",char:"色"},{num:86,meaning:"피 혈",char:"血"},{num:87,meaning:"볼 견",char:"見"},{num:88,meaning:"말 언",char:"言"},{num:89,meaning:"발 족",char:"足"},{num:90,meaning:"몸 신",char:"身"},
+            {num:91,meaning:"낯 면",char:"面"},{num:92,meaning:"소리 음",char:"音"},{num:93,meaning:"머리 두",char:"頁"},{num:94,meaning:"머리 수",char:"首"},{num:95,meaning:"뼈 골",char:"骨"},{num:96,meaning:"머리털 발",char:"髟"},{num:97,meaning:"코 비",char:"鼻"},{num:98,meaning:"이 치",char:"齒"},{num:99,meaning:"들어갈 입",char:"入"},{num:100,meaning:"감쌀 포",char:"勹"},
+            {num:101,meaning:"또 우",char:"又"},{num:102,meaning:"밤 야",char:"夂"},{num:103,meaning:"가지 휴",char:"夊"},{num:104,meaning:"끌 연",char:"廴"},{num:105,meaning:"둘 공",char:"廾"},{num:106,meaning:"걸을 척",char:"彳"},{num:107,meaning:"칠 복",char:"攴"},{num:108,meaning:"가지 지",char:"支"},{num:109,meaning:"입 흠",char:"欠"},{num:110,meaning:"그칠 지",char:"止"},
+            {num:111,meaning:"등 발",char:"癶"},{num:112,meaning:"설 립",char:"立"},{num:113,meaning:"이를 지",char:"至"},{num:114,meaning:"다를 차",char:"舛"},{num:115,meaning:"걸을 행",char:"行"},{num:116,meaning:"달릴 주",char:"走"},{num:117,meaning:"걸음 착",char:"辵"},{num:118,meaning:"따를 인",char:"隶"},{num:119,meaning:"싸움 투",char:"鬥"},{num:120,meaning:"책상 기",char:"几"},
+            {num:121,meaning:"움푹 오",char:"凵"},{num:122,meaning:"칼 도",char:"刀"},{num:123,meaning:"힘 력",char:"力"},{num:124,meaning:"수저 비",char:"匕"},{num:125,meaning:"공 공",char:"工"},{num:126,meaning:"줄기 간",char:"干"},{num:127,meaning:"창 역",char:"弋"},{num:128,meaning:"활 궁",char:"弓"},{num:129,meaning:"창 과",char:"戈"},{num:130,meaning:"되 두",char:"斗"},
+            {num:131,meaning:"무게 근",char:"斤"},{num:132,meaning:"막대 수",char:"殳"},{num:133,meaning:"널판 양",char:"爿"},{num:134,meaning:"조각 편",char:"片"},{num:135,meaning:"옥 옥",char:"玉"},{num:136,meaning:"기와 와",char:"瓦"},{num:137,meaning:"창 모",char:"矛"},{num:138,meaning:"화살 시",char:"矢"},{num:139,meaning:"그물 망",char:"网"},{num:140,meaning:"쟁기 뢰",char:"耒"},
+            {num:141,meaning:"글씨 유",char:"聿"},{num:142,meaning:"조개 패",char:"貝"},{num:143,meaning:"수레 차",char:"車"},{num:144,meaning:"쇠 금",char:"金"},{num:145,meaning:"북 고",char:"鼓"},{num:146,meaning:"피리 약",char:"龠"},{num:147,meaning:"상자 방",char:"匚"},{num:148,meaning:"쟁반 반",char:"皿"},{num:149,meaning:"항아리 부",char:"缶"},{num:150,meaning:"맷돌 구",char:"臼"},
+            {num:151,meaning:"콩 두",char:"豆"},{num:152,meaning:"솥 혁",char:"鬲"},{num:153,meaning:"솥 정",char:"鼎"},{num:154,meaning:"수건 건",char:"巾"},{num:155,meaning:"적을 요",char:"幺"},{num:156,meaning:"길 필",char:"疋"},{num:157,meaning:"실 사",char:"糸"},{num:158,meaning:"옷 의",char:"衣"},{num:159,meaning:"가죽 혁",char:"革"},{num:160,meaning:"가죽 위",char:"韋"},
+            {num:161,meaning:"수놓을 자",char:"黹"},{num:162,meaning:"달 감",char:"甘"},{num:163,meaning:"술 유",char:"酉"},{num:164,meaning:"밥 식",char:"食"},{num:165,meaning:"향기 향",char:"香"},{num:166,meaning:"진사 진",char:"鬯"},{num:167,meaning:"네모 방",char:"冂"},{num:168,meaning:"집 면",char:"宀"},{num:169,meaning:"숨길 구",char:"匸"},{num:170,meaning:"둘러쌀 위",char:"囗"},
+            {num:171,meaning:"덮을 개",char:"冖"},{num:172,meaning:"넓을 광",char:"广"},{num:173,meaning:"집 호",char:"戶"},{num:174,meaning:"구멍 혈",char:"穴"},{num:175,meaning:"읍 읍",char:"邑"},{num:176,meaning:"문 문",char:"門"},{num:177,meaning:"높을 고",char:"高"},{num:178,meaning:"머리 두",char:"亠"},{num:179,meaning:"점 복",char:"卜"},{num:180,meaning:"봉인 인",char:"卩"},
+            {num:181,meaning:"나 사",char:"厶"},{num:182,meaning:"해 사",char:"士"},{num:183,meaning:"큰 대",char:"大"},{num:184,meaning:"작을 소",char:"小"},{num:185,meaning:"자기 기",char:"己"},{num:186,meaning:"작을 계",char:"彐"},{num:187,meaning:"털 삼",char:"彡"},{num:188,meaning:"글 문",char:"文"},{num:189,meaning:"모 방",char:"方"},{num:190,meaning:"없을 무",char:"无"},
+            {num:191,meaning:"나쁠 태",char:"歹"},{num:192,meaning:"말 모",char:"毋"},{num:193,meaning:"견줄 비",char:"比"},{num:194,meaning:"성 씨",char:"氏"},{num:195,meaning:"불 화",char:"火"},{num:196,meaning:"괘 효",char:"爻"},{num:197,meaning:"검을 현",char:"玄"},{num:198,meaning:"날 생",char:"生"},{num:199,meaning:"쓸 용",char:"用"},{num:200,meaning:"흰 백",char:"白"},
+            {num:201,meaning:"보일 시",char:"示"},{num:202,meaning:"배 주",char:"舟"},{num:203,meaning:"간 간",char:"艮"},{num:204,meaning:"옷 자",char:"襾"},{num:205,meaning:"붉을 적",char:"赤"},{num:206,meaning:"매운 신",char:"辛"},{num:207,meaning:"나눌 찬",char:"釆"},{num:208,meaning:"길 장",char:"長"},{num:209,meaning:"푸를 청",char:"靑"},{num:210,meaning:"아닐 비",char:"非"},
+            {num:211,meaning:"귀신 귀",char:"鬼"},{num:212,meaning:"누를 황",char:"黃"},{num:213,meaning:"검을 흑",char:"黑"},{num:214,meaning:"같을 제",char:"齊"}
         ];
 
         let showCharacters = false;
@@ -106,15 +106,17 @@
             let html = "";
             if (currentWeek !== "all") {
                 const weekNum = parseInt(currentWeek);
-                html += \<div class="week-header">제\주차 (\~\번)</div>\;
+                const startNum = start + 1;
+                const endNum = end;
+                html += `<div class="week-header">제${weekNum}주차 (${startNum}~${endNum}번)</div>`;
             }
             html += '<div class="grid">';
             weekRadicals.forEach(radical => {
-                html += \<div class="card \" data-num="\">
-                    <div class="number">#\</div>
-                    <div class="meaning">\</div>
-                    <div class="character \">\</div>
-                </div>\;
+                html += `<div class="card" data-num="${radical.num}">
+                    <div class="number">#${radical.num}</div>
+                    <div class="meaning">${radical.meaning}</div>
+                    <div class="character hidden">${radical.char}</div>
+                </div>`;
             });
             html += "</div>";
             content.innerHTML = html;
@@ -134,7 +136,7 @@
         }
 
         function updateStats(count) {
-            stats.textContent = \현재: \자 | 전체: 214자\;
+            stats.textContent = `현재: ${count}자 | 전체: 214자`;
         }
 
         function toggleCharacters() {
